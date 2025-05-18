@@ -4,56 +4,420 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Glam Gear - Car Showroom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Glam Gear - Luxury Car Showroom</title>
 </head>
 <body>
     <header>
-        <h2>
-        <img src="/GLAM Gear.png" alt="Logo" height="200">
-        
-    </h2>
+        <div class="header-container">
+            <div class="logo">
+                <img src="Photos/GLAM Gear.png" alt="Glam Gear Logo" height="200">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#Cars">Our Cars <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="ferrari.html">Ferrari</a></li>
+                            <li><a href="lamborghini.html">Lamborghini</a></li>
+                            <li><a href="porsche.html">Porsche</a></li>
+                            <li><a href="maserati.html">Maserati</a></li>
+                            <li><a href="mclaren.html">McLaren</a></li>
+                            <li><a href="royace.html">Rolls Royce</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#comparison">Compare</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#cars">Cars</a></li>
-            
-        </ul>
-    </nav>
-    
-    <section id="Cars">
-        <h2>Our Sports Cars</h2>
-        <div class="car-container">
-            <div class="car-card">
-                <img src="/ferrari.jpg" alt="Car 1">
-                <h3>Ferrari 488</h3>
-                <p><strong>Engine:</strong> 3.9L V8</p>
-                <p><strong>Power:</strong> 661 hp</p>
-                <p><strong>Top Speed:</strong> 205 mph</p>
-            </div>
-            <div class="car-card">
-                <img src="/lambo.jpg" alt="Car 2">
-                <h3>Lamborghini Huracan</h3>
-                <p><strong>Engine:</strong> 5.2L V10</p>
-                <p><strong>Power:</strong> 630 hp</p>
-                <p><strong>Top Speed:</strong> 201 mph</p>
-            </div>
-            <div class="car-card">
-                <img src="/porsche.jpg"alt="Car 3">
-                <h3>Porsche 911</h3>
-                <p><strong>Engine:</strong> 3.0L H6</p>
-                <p><strong>Power:</strong> 443 hp</p>
-                <p><strong>Top Speed:</strong> 191 mph</p>
-            </div>
+
+    <section id="hero">
+        <img src="Photos/hero-background.jpg" alt="Luxury Car Interior">
+        <div class="hero-content">
+            <h1>Experience Luxury</h1>
+            <p>Discover the finest collection of premium automobiles</p>
+            <a href="#Cars" class="cta-button">Explore Our Collection</a>
         </div>
     </section>
     
-    
-    
+    <section id="Cars">
+        <div class="section-header">
+            <h2>Our Premium Collection</h2>
+            <p class="section-subtitle">Experience the pinnacle of automotive excellence</p>
+        </div>
+        <div class="car-container">
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="Photos/ferrari.jpg" alt="Ferrari 488">
+                    <div class="car-overlay">
+                        <span class="car-price">₹3.70 Cr</span>
+                        <div class="car-actions">
+                            <a href="ferrari.html" class="view-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-info">
+                    <h3>Ferrari 488</h3>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>3.9L V8</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-horse"></i>
+                            <span>661 hp</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>205 mph</span>
+                        </div>
+                    </div>
+                    <div class="car-features">
+                        <span class="feature">Carbon Fiber</span>
+                        <span class="feature">Sport Mode</span>
+                        <span class="feature">Launch Control</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="Photos/lambo.jpg" alt="Lamborghini Huracan">
+                    <div class="car-overlay">
+                        <span class="car-price">₹3.80 Cr</span>
+                        <div class="car-actions">
+                            <a href="lamborghini.html" class="view-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-info">
+                    <h3>Lamborghini Huracan</h3>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>5.2L V10</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-horse"></i>
+                            <span>630 hp</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>201 mph</span>
+                        </div>
+                    </div>
+                    <div class="car-features">
+                        <span class="feature">AWD</span>
+                        <span class="feature">Carbon Ceramic</span>
+                        <span class="feature">Sport Exhaust</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="Photos/porsche.jpg" alt="Porsche 911">
+                    <div class="car-overlay">
+                        <span class="car-price">₹4.30 Cr</span>
+                        <div class="car-actions">
+                            <a href="porsche.html" class="view-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-info">
+                    <h3>Porsche 911</h3>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>3.0L H6</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-horse"></i>
+                            <span>443 hp</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>191 mph</span>
+                        </div>
+                    </div>
+                    <div class="car-features">
+                        <span class="feature">PDK</span>
+                        <span class="feature">Sport Chrono</span>
+                        <span class="feature">PASM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="Photos/maserati.jpg" alt="Maserati">
+                    <div class="car-overlay">
+                        <span class="car-price">₹2.50 Cr</span>
+                        <div class="car-actions">
+                            <a href="maserati.html" class="view-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-info">
+                    <h3>Maserati</h3>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>3.0L V6</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-horse"></i>
+                            <span>424 hp</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>177 mph</span>
+                        </div>
+                    </div>
+                    <div class="car-features">
+                        <span class="feature">Skyhook</span>
+                        <span class="feature">Sport Mode</span>
+                        <span class="feature">Premium Sound</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="Photos/mclaren.jpg" alt="McLaren Artura">
+                    <div class="car-overlay">
+                        <span class="car-price">₹3.20 Cr</span>
+                        <div class="car-actions">
+                            <a href="mclaren.html" class="view-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-info">
+                    <h3>McLaren Artura</h3>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>3.0L V6</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-horse"></i>
+                            <span>671 hp</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>205 mph</span>
+                        </div>
+                    </div>
+                    <div class="car-features">
+                        <span class="feature">Hybrid</span>
+                        <span class="feature">Carbon Lightweight</span>
+                        <span class="feature">Track Mode</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="Photos/rolls royace.jpg" alt="Rolls Royce">
+                    <div class="car-overlay">
+                        <span class="car-price">₹6.95 Cr</span>
+                        <div class="car-actions">
+                            <a href="royace.html" class="view-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-info">
+                    <h3>Rolls Royce</h3>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>6.75L V12</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-horse"></i>
+                            <span>563 hp</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>155 mph</span>
+                        </div>
+                    </div>
+                    <div class="car-features">
+                        <span class="feature">Bespoke</span>
+                        <span class="feature">Magic Carpet</span>
+                        <span class="feature">Starlight</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison">
+        <h2>Compare Our Models</h2>
+        <div class="comparison-container">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Engine</th>
+                        <th>Power</th>
+                        <th>Top Speed</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ferrari 488</td>
+                        <td>3.9L V8</td>
+                        <td>661 hp</td>
+                        <td>205 mph</td>
+                        <td>₹3.70 Cr</td>
+                    </tr>
+                    <tr>
+                        <td>Lamborghini Huracan</td>
+                        <td>5.2L V10</td>
+                        <td>630 hp</td>
+                        <td>201 mph</td>
+                        <td>₹3.80 Cr</td>
+                    </tr>
+                    <tr>
+                        <td>Porsche 911</td>
+                        <td>3.0L H6</td>
+                        <td>443 hp</td>
+                        <td>191 mph</td>
+                        <td>₹4.30 Cr</td>
+                    </tr>
+                    <tr>
+                        <td>Maserati</td>
+                        <td>3.0L V6</td>
+                        <td>424 hp</td>
+                        <td>177 mph</td>
+                        <td>₹2.50 Cr</td>
+                    </tr>
+                    <tr>
+                        <td>McLaren Artura</td>
+                        <td>3.0L V6 Hybrid</td>
+                        <td>671 hp</td>
+                        <td>205 mph</td>
+                        <td>₹3.20 Cr</td>
+                    </tr>
+                    <tr>
+                        <td>Rolls Royce</td>
+                        <td>6.75L V12</td>
+                        <td>563 hp</td>
+                        <td>155 mph</td>
+                        <td>₹6.95 Cr</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>shrivastavaharsh5491@gmail.com</p>
+                </div>
+                
+            </div>
+            <div class="contact-form">
+                <form id="contactForm" action="mailto:shrivastavaharsh5491@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="inquiry">General Inquiry</option>
+                            <option value="test-drive">Test Drive Request</option>
+                            <option value="purchase">Purchase Information</option>
+                            <option value="service">Service Request</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Glam Gear. All rights reserved.</p>
-        <p>For Bookings Contact on our mail -: shrivastavaharsh5491@gmai.com </p>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Glam Gear</h3>
+                <p>Your premier destination for luxury and sports cars in India. Experience excellence in automotive luxury with our curated collection of premium vehicles.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Cars">Our Cars</a></li>
+                    <li><a href="#comparison">Compare</a></li>
+                
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Glam Gear. All rights reserved.</p>
+            <p>Made by Harsh Shrivastava</p>
+        </div>
     </footer>
+
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.car-card, .testimonial-card, .info-item').forEach((el) => observer.observe(el));
+    </script>
 </body>
 </html>

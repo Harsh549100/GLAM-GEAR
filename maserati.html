@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Maserati Details - Glam Gear</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="Photos/GLAM Gear.png" alt="Glam Gear Logo" height="200">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#Cars">Our Cars <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="ferrari.html">Ferrari</a></li>
+                            <li><a href="lamborghini.html">Lamborghini</a></li>
+                            <li><a href="porsche.html">Porsche</a></li>
+                            <li><a href="maserati.html">Maserati</a></li>
+                            <li><a href="mclaren.html">McLaren</a></li>
+                            <li><a href="royace.html">Rolls Royce</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#comparison">Compare</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="car-detail">
+        <div class="car-detail-container">
+            <div class="car-image-gallery">
+                <img src="Photos/maserati.jpg" alt="Maserati Main Image" class="main-car-image">
+                <!-- Add more images here if available -->
+            </div>
+            <div class="car-info">
+                <h1>Maserati</h1>
+                <p class="car-price">₹2.50 Cr</p>
+
+                <div class="car-specs-detail">
+                    <h3>Specifications</h3>
+                    <ul>
+                        <li><strong>Engine:</strong> 3.0L V6</li>
+                        <li><strong>Power:</strong> 424 hp</li>
+                        <li><strong>Top Speed:</strong> 177 mph</li>
+                        <li><strong>0-60 mph:</strong> 4.8 seconds</li>
+                    </ul>
+                </div>
+
+                <div class="car-features-detail">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Skyhook Suspension</li>
+                        <li>Sport Mode</li>
+                        <li>Premium Sound System</li>
+                        <li>Luxury Leather Interior</li>
+                        <li>Advanced Safety Features</li>
+                    </ul>
+                </div>
+
+                <div class="car-description">
+                    <h3>Description</h3>
+                    <p>Maserati offers a blend of Italian elegance, performance, and luxury. Known for their distinctive design and powerful engines, Maserati vehicles provide a refined driving experience with a sporty edge. Each model is crafted with attention to detail, offering a unique combination of style and substance.</p>
+                </div>
+
+                <div class="car-actions-detail">
+                    <a href="index.html#contact" class="cta-button">Inquire Now</a>
+                    <a href="index.html#contact" class="book-test-drive-btn">Book Test Drive</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Glam Gear</h3>
+                <p>Your premier destination for luxury and sports cars in India. Experience excellence in automotive luxury with our curated collection of premium vehicles.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#Cars">Our Cars</a></li>
+                    <li><a href="index.html#comparison">Compare</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> shrivastavaharsh5491@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Glam Gear. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
